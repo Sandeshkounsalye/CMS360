@@ -6,10 +6,13 @@ public class Trainer {
     private String trainerType;
     private String trainerNumberofSloat;
 
-    public Trainer(String trainerName, String trainerType, String trainerNumberofSloat) {
+    private String trainerForSubject;
+
+    public Trainer(String trainerName, String trainerType, String trainerNumberofSloat, String trainerForSubject) {
         this.trainerName = trainerName;
         this.trainerType = trainerType;
         this.trainerNumberofSloat = trainerNumberofSloat;
+        this.trainerForSubject = trainerForSubject;
     }
 
     Trainer(){}
@@ -35,5 +38,13 @@ public class Trainer {
 
     public void setTrainerNumberofSloat(String trainerNumberofSloat) {
         this.trainerNumberofSloat = trainerNumberofSloat;
+    }
+
+    public String getTrainerForSubject() {
+        return trainerForSubject;
+    }
+
+    public void setTrainerForSubject(String trainerForSubject) {
+        this.trainerForSubject = trainerForSubject;
     }
 }
